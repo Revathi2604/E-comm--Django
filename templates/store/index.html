@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .payment-option {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="payment-options" style="display: none;">
+    <button id="credit-debit" class="payment-option" onclick="selectPayment('credit-debit')">Credit/Debit Card</button>
+    <button id="paytm" class="payment-option" onclick="selectPayment('paytm')">Paytm</button>
+    <button id="gpay" class "payment-option" onclick="selectPayment('gpay')">Google Pay</button>
+  </div>
+  <input id="form-button" class="btn btn-success btn-block" type="submit" value="Continue" onclick="showPaymentOptions()">
+
+  <script>
+    function showPaymentOptions() {
+      var paymentOptions = document.getElementById('payment-options');
+      paymentOptions.style.display = 'block';
+    }
+
+    function selectPayment(option) {
+      // You can handle the selected payment method here, e.g., redirect to the payment page.
+      alert('You selected ' + option);
+    }
+  </script>
+</body>
+</html>

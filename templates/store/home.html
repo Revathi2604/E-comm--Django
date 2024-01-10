@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .content {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Home Page</h1>
+
+    <div class="content">
+      <h2>E-commerce</h2>
+      <p>
+        E-commerce, short for electronic commerce, refers to the buying and
+        selling of goods and services using the internet. It has revolutionized
+        the way we shop, conduct business, and interact with the global
+        marketplace.
+      </p>
+
+      <p>
+        In the digital age, consumers can browse an extensive range of products
+        and services from the comfort of their homes, make secure online
+        payments, and have their purchases delivered right to their doorsteps.
+        E-commerce has expanded the horizons of retail, enabling businesses to
+        reach a global audience and providing consumers with convenience and
+        choice.
+      </p>
+
+      <p>
+        Whether you're a small business owner looking to establish an online
+        presence or a savvy shopper exploring the endless virtual aisles of
+        e-commerce platforms, the possibilities are boundless. Welcome to the
+        exciting world of E-commerce!
+      </p>
+
+      <div>
+        <img
+          src="{% static 'images/eone.png' %}"
+          alt="E-commerce Image One"
+          width="300"
+          height="200"
+        />
+        <img
+          src="{% static 'images/etwo.jpg' %}"
+          alt="E-commerce Image Two"
+          width="300"
+          height="200"
+        />
+      </div>
+    </div>
+  </body>
+</html>

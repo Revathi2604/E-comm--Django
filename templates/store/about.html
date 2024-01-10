@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>About Us</h1>
+
+    <p>
+      Welcome to our online store! We are passionate about delivering
+      high-quality products to our customers.
+    </p>
+
+    <p>
+      With a wide range of items, from headphones to fashion, we aim to provide
+      the best shopping experience.
+    </p>
+
+    <p>Thank you for choosing us for your shopping needs.</p>
+
+    <!-- Add your image with the appropriate image path -->
+    <img
+      src="{% static 'images/about.jpeg' %}"
+      alt="Image Description"
+      width="400"
+      height="400"
+    />
+  </body>
+</html>
